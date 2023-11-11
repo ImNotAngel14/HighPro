@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(194, 235, 233);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 4.5rem;
+}
+
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.beneficio {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 0 10px rgba(94, 94, 94, 0.1);
+    max-height: 20rem;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+.beneficio_img{
+    max-width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.beneficio_img img{
+    max-width:15rem;
+    max-height:fit-content ;
+}
+
+.beneficio_texto{
+    color: #333;
+    vertical-align: middle;
+}
+
+.beneficio:hover{
+    background-color: rgb(94, 204, 204);
+    box-shadow: 0 0 10px rgb(217, 229, 243);
+
+    .beneficio_texto{
+    color: white;
+}
+}
+
+.frase_atractiva {
+    background-color: #6d6d6d;
+    color: #fff;
+    text-align: center;
+    padding: .85rem;
+    vertical-align: middle;
+}
+
+.frase_atractiva p {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(100, 129, 123);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #f3f3f3;
+    color:rgb(66, 146, 130);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+#watchme {
+
+    font-style: italic;
+    margin-bottom: 0;
+    animation-duration: 3s;
+    animation-name: slidein;
+    background-color:  rgb(100, 129, 123);
+
+    color: #fff; 
+    text-align: center; 
+    padding: .85rem; 
+    vertical-align: middle; 
+}
+
+/* animacion */
+
+.slidein {
+animation-duration: 3s;
+animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+
+}
+
+/* animacion */
+
+/* Define una animación para hacer que el elemento se vuelva visible */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Inicialmente, el elemento es invisible */
+    }
+    100% {
+        opacity: 1; /* Después de 3 segundos, el elemento es completamente visible */
+    }
+}
+
+.beneficio {
+animation-duration: 3s; /* Duración de la animación (3 segundos) */
+animation-name: fadeIn; /* Nombre de la animación definida anteriormente */
+opacity: 1; /* Establece la opacidad inicialmente en 0 (invisible) */
+}

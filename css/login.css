@@ -1,0 +1,89 @@
+body{
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    animation: mymove 5s infinite;
+
+}
+
+.Contenedor{
+    background-color: rgba(255, 255, 255, 0.774);
+    padding-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+@keyframes mymove {
+    0% {
+      background-color: #8EB25A;
+    }
+    25% {
+      background-color: #C7D9AD;
+    }
+    50% {
+      background-color: #C7D9AD;
+    }
+    100% {
+      background-color: #8EB25A;
+    }
+}
+
+h1{
+    padding-top: 1.5rem;
+    color: #494949;
+}
+
+.dato{
+    border-radius: 0.2rem;
+    background-color: white;
+    color:#8EB25A;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* color: #495057; */
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    border: none;
+
+    /* border-radius: .25rem; */
+}
+
+.dato:focus {
+    background-color: #C7D9AD;
+    outline: none !important;
+    border:none;
+    box-shadow: 0 0 10px rgb(217, 229, 243);
+  }
+
+
+::placeholder{
+    color:#8EB25A;
+}
+.dato:focus::placeholder {
+    color: white;
+}
+
+
+.btn_login{
+    background-color: #8EB25A;
+    color: rgba(255, 255, 255, 0.884);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+.btn_login:hover{
+    background-color: #8EB25A;
+    color:white;
+    filter: brightness(1.2);
+}
+
+a{
+    color:rgb(143, 143, 143)
+}
+a:hover{
+    color:rgb(76, 185, 218)
+}

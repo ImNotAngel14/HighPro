@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <!-- Agregar la referencia a Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/LogoNav.png" alt="" width="40%" height="30%">
+          </a>
+        </div>
+      </nav>
+    <div class="container mt-5 ">
+        <div class="row justify-content-center ">
+            <div class="col-md-6 col-sm-12 Contenedor">
+                <form class="mx-5" action="home.html" method="post" id="form_login" name="form_login" onsubmit="return authLogin()">
+                    <h1 class="mb-4">Iniciar Sesión</h1>
+                    <div class="form-group">
+                        <label for="username"></label>
+                        <input type="text" id="username" name="username" class="dato"  placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" class="dato" placeholder="Contraseña" required>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn_login">Ingresar</button>
+                    <br><br>
+                    <span>¿Aún no tienes una cuenta? &nbsp;</span>
+                    <a href="register.html">Registrate Aquí</a>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
