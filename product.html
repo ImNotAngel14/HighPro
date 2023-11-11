@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/shoppingCart.css">
+</head>
+<body>
+    <!--Nav bar-->
+    <div class="container my-2 justify-content-center">
+        <div class="row">
+            <div class="col-md-3 my-auto d-none d-md-block d-lg-block d-xl-block">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/LogoNav.png" alt="" width="40%" height="30%">
+                </a>
+            </div>
+            <div class="col-md-6 ">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">BUSCAR</button>
+                </form>
+            </div>
+            <div class="col-md-3">
+                <a href="register.html">
+                    <button class="btn" type="button">CREA TU CUENTA</button>
+                </a>
+                <a href="login.html">
+                    <button class="btn" type="button">INGRESA</button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <div class="container-fluid justify-content-center mb-2" style="background-color: #ABC684;">
+            <div class="row">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">HIGH PRO EXPERTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">PC'S LEGA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">COMPONENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">ACCESORIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Producto-->
+    <div class="container">
+        <div class="my-2">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="col-sm-2">
+                    <img src="images/Lap.jpg" alt="" class="rounded img-thumbnail" style="width: 100px; height: 100px; object-fit:cover;">
+                    <img src="images/Lap.jpg" alt="" class="rounded img-thumbnail" style="width: 100px; height: 100px; object-fit:cover;">
+                    <img src="images/Lap.jpg" alt="" class="rounded img-thumbnail" style="width: 100px; height: 100px; object-fit:cover;">
+
+                </div>
+                <div class="col-sm-4 d-flex align-items-center">
+                    <div class="image">
+                        <img src="images/Lap.jpg" alt="" class="rounded img-thumbnail" style="object-fit:fill;">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card rounded">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">Cantidad disponible</small></p>
+                            <h4 class="card-title">Nombre producto</h4>
+                            <p class="card-text"><small class="text-muted">Categoria</small></p>
+                            <p class="card-text">Descripción</p>
+                            <h5 class="card-title">Precio: $</h5>
+                            <p class="card-text">Valoración:</p>
+                            <div class="row justify-content-center ">
+                                <button class="btn btn_hp my-1">Comprar</button>
+                                <button class="btn btn_hp my-1">Agregar al carrito</button>
+                                <!--button class="btn btn-primary my-1">Comprar</button>
+                                <button class="btn btn-outline-primary my-1">Agregar al carrito</button-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="d-flex flex-row justify-content-center">
+            
+            <div class="col-sm-4">
+                <div>
+                    <h1>Comentarios</h1>
+                </div>
+                
+                <div class="card rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">Autor</h5>
+                        <p class="card-text">Comentario</p>
+                        <p class="card-text"><small class="text-muted">Fecha</small></p>
+                    </div>
+                </div>
+                <div>
+                    <form class="" role="search">
+                        <input class="form-control my-2" type="search" placeholder="Escribe un comentario..." aria-label="Search">
+                        <button class="btn btn_hp" type="submit">Publicar</button>
+                    </form>
+                    <br>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.btn_hp
+{
+    background-color: #8EB25A;
+    color: white;
+}
+
+.btn_hp:hover
+{
+    background-color: #ABC684;
+    color: white;
+}
